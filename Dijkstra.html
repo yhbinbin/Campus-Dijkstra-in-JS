@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+	<style>
+		body{
+			position:relative;
+		}
+		#map{
+			position:relative;
+		}
+		iframe{
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:-1;
+			width:1097px;
+			height:1761px;
+		}
+		#cac{
+			position:fixed;
+			float:right;
+			width:300px;
+/*			height:400px;*/
+			border:3px solid gray;
+			right:0;
+		}
+	</style>
+	<link rel="stylesheet" href="map.css">
+ </head>
+ <body>
+	<div id="map">
+		<iframe src="map.svg">
+		</iframe>
+		<button id="p1" title="北门">1</button>
+		<button id="p2" title="土操场西北角">2</button>
+		<button id="p3" title="体育馆">3</button>
+		<button id="p4" title="土操场旗台">4</button>
+		<button id="p5" title="梅园西北角">5</button>
+		<button id="p6" title="梅四竹三十字路口">6</button>
+		<button id="p7" title="土操场建大书店">7</button>
+		<button id="p8" title="土操场东南角">8</button>
+		<button id="p9" title="新操场西南入口">9</button>
+		<button id="p10" title="梅四西">10</button>
+		<button id="p11" title="梅四东竹三西">11</button>
+		<button id="p12" title="竹三东">12</button>
+		<button id="p13" title="垃圾站">13</button>
+		<button id="p14" title="梅一东">14</button>
+		<button id="p15" title="梅园水房">15</button>
+		<button id="p16" title="梅一梅二东">16</button>
+		<button id="p17" title="竹一西">17</button>
+		<button id="p18" title="竹一东松二西">18</button>
+		<button id="p19" title="樱园入口">19</button>
+		<button id="p20" title="梅二西">20</button>
+		<button id="p21" title="梅三西">21</button>
+		<button id="p22" title="梅三东">22</button>
+		<button id="p23" title="竹二西">23</button>
+		<button id="p24" title="超市水房">24</button>
+		<button id="p25" title="竹二东松二西">25</button>
+		<button id="p26" title="宣传栏">26</button>
+		<button id="p27" title="松二花坛">27</button>
+		<button id="p28" title="松二入口">28</button>
+		<button id="p29" title="大学生事务中心">29</button>
+		<button id="p30" title="新操场南入口">30</button>
+		<button id="p31" title="建大花园小路口">31</button>
+		<button id="p32" title="雅苑坡顶">32</button>
+		<button id="p33" title="雅苑十字路口">33</button>
+		<button id="p34" title="文苑入口">34</button>
+		<button id="p35" title="映雪长廊北口">35</button>
+		<button id="p36" title="火车十字路口">36</button>
+		<button id="p37" title="火车科学楼丁字路口">37</button>
+		<button id="p38" title="火车逸夫楼丁字路口">38</button>
+		<button id="p39" title="火车餐厅东入口">39</button>
+		<button id="p40" title="小东门">40</button>
+		<button id="p41" title="通往商业街路口">41</button>
+		<button id="p42" title="大活西">42</button>
+		<button id="p43" title="映雪长廊西口">43</button>
+		<button id="p44" title="情人坡西口">44</button>
+		<button id="p45" title="映雪长廊中心">45</button>
+		<button id="p46" title="映雪长廊东口">46</button>
+		<button id="p47" title="电影院">47</button>
+		<button id="p48" title="逸夫楼">48</button>
+		<button id="p49" title="科学楼北口">49</button>
+		<button id="p50" title="科学楼东口">50</button>
+		<button id="p51" title="博文逸夫西">51</button>
+		<button id="p52" title="博文逸夫东">52</button>
+		<button id="p53" title="榴园南口">53</button>
+		<button id="p54" title="综合楼公交站">54</button>
+		<button id="p55" title="映雪长廊南口">55</button>
+		<button id="p56" title="科学楼公交站">56</button>
+		<button id="p57" title="图书馆公交站">57</button>
+		<button id="p58" title="图书馆喷泉北">58</button>
+		<button id="p59" title="信息楼公交站">59</button>
+		<button id="p60" title="信息楼南">60</button>
+		<button id="p61" title="环山路东口">61</button>
+		<button id="p62" title="南门">62</button>
+		<button id="p63" title="老别墅">63</button>
+		<button id="p64" title="博文外文东">64</button>
+		<button id="p65" title="西门">65</button>
+		<button id="p66" title="环山路西口">66</button>
+		<button id="p67" title="环山路文德路">67</button>
+		<button id="p68" title="海草房">68</button>
+		<button id="p69" title="图书馆后门">69</button>
+		<button id="p70" title="环山路樱花路">70</button>
+		<button id="p71" title="图书馆顶部喷泉">71</button>
+		<button id="p72" title="办公楼东">72</button>
+		<button id="p73" title="大东门北">73</button>
+		<button id="p74" title="大东门南">74</button>
+		<button id="p75" title="建艺馆北">75</button>
+		<button id="p76" title="校史馆喷泉">76</button>
+		<button id="p77" title="建艺馆科技馆后门">77</button>
+		<button id="p78" title="校史科技馆南">78</button>
+		<button id="p79" title="科技馆公交站">79</button>
+		<button id="p80" title="驾校">80</button>
+	</div>
+	<div id="cac">
+		<h3 align="center">最短路径计算器</h3>
+		<hr>
+		&nbsp;&nbsp;<button id="getstart">选择起点</button>
+		<hr>
+		&nbsp;&nbsp;起点：<span id="span-start"></span>
+		<hr>
+		<hr>
+		&nbsp;&nbsp;<button id="getend">选择终点</button>
+		<hr>
+		&nbsp;&nbsp;终点：<span id="span-end"></span>
+		<hr>
+		<hr>
+		&nbsp;&nbsp;<button id="getpnode">设置中间点</button>
+		<button id="clearpnode">清除中间点</button>
+		<hr>
+		&nbsp;&nbsp;已选中间点：<span id="span-pnode">无(可选一个)</span>
+		<hr>
+		&nbsp;&nbsp;<button id="gethinder">设置障碍点</button>
+		<button id="clearhinder">清除障碍点</button>
+		<hr>
+		&nbsp;&nbsp;已选障碍点：<span id="span-hinder">无(可选多个)</span>
+		<hr>
+		<hr>
+		&nbsp;&nbsp;<button id="getpath">分析最短路径</button>		
+		<hr>
+		&nbsp;&nbsp;<span id="span-path"></span>
+		<hr>
+		&nbsp;&nbsp;<span id="span-pathlength"></span>
+		<hr>
+		&nbsp;&nbsp;<button id="f5" href="Dijkstra.html">刷新重置</button>
+	</div>
+	<script src="Dijkstra.js"></script>
+ </body>
+</html>
